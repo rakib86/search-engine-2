@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="options1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+
+  <title>DALL-E 2 Google Extension Options</title>
+  
+  <style>
+      body {
+    font-family: sans-serif;
+    font-size: 17px;
+    padding: 30px;
+    color: #333333;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+
+  }
+
+  div {
+    padding: 10px 0;
+  }
+
+  label {
+    display: block;
+  }
+
+  input {
+    padding: 5px;
+    font-size: 1em;
+    margin-left: 10px;
+    width: 250px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+  }
+
+  select {
+    padding: 5px;
+    font-size: 1em;
+    margin-left: 10px;
+    width: 110px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+  }
+
+  #save {
+    padding: 10px 50px;
+    font-size: 1em;
+    margin-left: 10px;
+    background-color: #0f9d58;
+    color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #0f9d58;
+    
+    
+  }
+
+  h1{
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+    letter-spacing: 4px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: #007cc4;
+    text-align: center;
+
+  }
+  .Social-media{
+    display: flex;
+    justify-content: center;
+  }
+  a{
+    display: flex;
+    background: #fff;
+    height: 65px;
+    width: 65px;
+    margin: 0 15px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 6px 6px 10px -1px rgba(0,124,196,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    border: 1px solid rgba(0, 124, 196, 0);
+    transition: transform 0.5s
+  }
+  a i{
+    font-size: 50px;
+    color: #777;
+    transition: transform 0.5s;
+  }
+  a:hover{
+    box-shadow:inset 4px 4px 6px -2px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                      -0.5px -0.5px 0px -1px rgba(255,255,255,1),
+                      0.5px 0.5px 0px rgba(0,0,0,0.15),
+                      0px 12px 10px -10px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0, 124, 196, 0.1);
+    transform: translateY(2px);
+  }
+  a:hover i{
+    transform: scale(0.90);
+  }
+  a:hover .fa-facebook{
+    color: #3b5998;
+  }
+  a:hover .fa-twitter{
+    color: #00acee;
+  }
+  a:hover .fa-whatsapp{
+    color: #4fce5d;
+  }
+  a:hover .fa-instagram{
+    color: #f14843;
+  }
+  a:hover .fa-youtube{
+    color: #f00;
+  }
+  .donate {
+    text-align: center;
+    font-family: sans-serif;
+    color: #F9A826
+  }
+  </style>
+</head>
+<body>
+
+<div>
+  <label>
+    OpenAI API Key:
+    <input type="password" id="api-key">
+  </label>
+</div>
+
+<div>
+  <label>
+    Resolution of genareted images:
+    <select name="resolution" id="resolution">
+      <option value="1024x1024">1024x1024</option>
+      <option value="512x512">512x512</option>
+      <option value="256x256">256x256</option>
+    </select>
+  </label>
+</div>
+
+<div>
+  <label>
+    Number of images per search:
+    <select name="n-images" id="n-images">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+  </label>
+</div>
+
+<button id="save">Save</button>
+  
+  
+ <div class="donate">
+   <h2>If this extension help you you can buy me a Coffee :) </h2>
+   <h2>Bkash: 01706653532 <h2>
+ </div>
+ 
+ <h1>Contact with me</h1>
+    <div class="Social-media">
+      <a href="https://fb.me/rakib.cs"><font color="#007cc4" target="_blank"><i class="fab fa-facebook"></i></font></a>
+      <a href="https://www.linkedin.com/in/rakib-cs/"><font color="#007cc4"><i class="fab fa-linkedin"></i></font></a>
+      <a href="https://wa.me/8801706653532"><font color="#007cc4"><i class="fab fa-whatsapp"></i></font></a>
+      <a href="https://www.youtube.com/channel/UC5PPH_OjetIJfFepT8ltBTA" target="_blank"><font color="#007cc4"><i class="fab fa-youtube"></i></a></font>
+    </div>
+
+
+  
+<script src="options1.js"></script>
+</body>
+</html>
